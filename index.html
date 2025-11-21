@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teles 3D - Paso 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div id="app">
+      <video
+        id="videoOverlay"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+
+      <div id="threeContainer"></div>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+        "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
